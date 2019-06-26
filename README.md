@@ -10,6 +10,8 @@ Due to the limit of CPU load and the ugly performance of the SX1255,the system c
 
 Maybe it can do a little bit better when using a better MCU such as RT1052 or F28388D.
 
+The reference version, designed by my mother, powered by RT1052, AIC23 and CMX973, easily achieved 284kbps(OFDM).Σ(⊙▽⊙"a
+
 Square root rasied cosine filter is used both in tx and rx to reduce side lobe leakage and maxim the SNR.
 
 Both phy and link layer are provided, while the phy provide a payload of 36 bytes per frame.
@@ -18,9 +20,9 @@ The link layer, uses the 6 bytes as link encapsulation, remaining 32 bytes for u
 
 The struct looks like:
 
-Preamble ->|             PHY Payload              |-> EOF
+Preamble ->(             PHY Payload              )-> EOF
 
-           |Address -> Type -> Link Payload -> CRC|
+           (Address -> Type -> Link Payload -> CRC)
 
 At burst mode, the signal in frequency domain looks like this:
 
