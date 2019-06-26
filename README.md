@@ -11,3 +11,5 @@ Maybe when using a better MCU such as RT1052 or F28388D can do a little bit bett
 Square root rasied cosine filter is used both in tx and rx to reduce side lobe leakage and maxim the SNR.
 
 At burst mode, the signal in frequency domain looks like this:
+
+![Burst Mode](https://github.com/zhaohengbo/C2000-SDR/master/srcreenshot/1.PNG)
