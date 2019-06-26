@@ -12,4 +12,4 @@ Square root rasied cosine filter is used both in tx and rx to reduce side lobe l
 
 At burst mode, the signal in frequency domain looks like this:
 
-![Burst Mode](https://github.com/zhaohengbo/C2000-SDR/master/srcreenshot/1.PNG)
+![Burst Mode](https://github.com/zhaohengbo/C2000-SDR/blob/master/screenshot/1.PNG)
