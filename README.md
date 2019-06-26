@@ -20,9 +20,9 @@ The link layer, uses the 6 bytes as link encapsulation, remaining 32 bytes for u
 
 The struct looks like:
 
-Preamble ->(             PHY Payload              )-> EOF
+    (Preamble ->(             PHY Payload              )-> EOF)
 
-           (Address -> Type -> Link Payload -> CRC)
+                (Address -> Type -> Link Payload -> CRC)
 
 At burst mode, the signal in frequency domain looks like this:
 
