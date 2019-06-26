@@ -12,6 +12,16 @@ Maybe it can do a little bit better when using a better MCU such as RT1052 or F2
 
 Square root rasied cosine filter is used both in tx and rx to reduce side lobe leakage and maxim the SNR.
 
+Both phy and link layer are provided, while the phy provide a payload of 36 bytes per frame.
+
+The link layer, uses the 6 bytes as link encapsulation, remaining 32 bytes for upper layer(the same as NRF905).
+
+The struct looks like:
+
+Preamble ->|             PHY Payload              |-> EOF
+
+           |Address -> Type -> Link Payload -> CRC|
+
 At burst mode, the signal in frequency domain looks like this:
 
 ![Burst Mode](https://github.com/zhaohengbo/C2000-SDR/blob/master/screenshot/1.PNG)
